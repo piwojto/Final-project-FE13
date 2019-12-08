@@ -2,41 +2,63 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 .container {
-    background-color: #4E4E4E;
     margin: 0 auto;
     width: 960px;
 }
 nav {
     display: flex;
-    align-items: center;
     height: 50px;
     font-size: 18px;
     color: #FFFFFF;
+    background-color: #4E4E4E;
 }
 nav h1{
     font-weight: bold;
 }
 .nav-links {
-    justify-content: space-between;
+  
 }
 .nav-links a {
     text-decoration: none;
     color: #FFFFFF;
+    margin-left: 40px;;
+}
+nav .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .landing-page {
-    height: 574px;
+    height: 100vh;
     background-image: url(landing-img.jpg);
     background-size: 100%;
     background-repeat: no-repeat;
 }
-.landing-shadow {  
+.landing-page-shadow {  
     background: rgba(0, 0, 0, 0.15);
-    width: 100vw;
-    height: 574px;
-    width: 960px;
+    width: 100%;
+    height: 100%;
 }
-.landing-shadow h2 {
+.landing-page-shadow h2 {
     font-size: 36px;
     line-height: 42px;
+    padding-top: 4em;
     color: #FFFFFF;
+}
+.landing-page-shadow h3 {
+    font-size: 18px;
+    line-height: 21px;
+    padding: 4em 0;
+    color: #FFFFFF;
+}
+.landing-page-shadow .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+}
+.land-page-btn {
+    width: 164px;
+    height: 41.39px;
+    font-size: 18px;
+    border: 3px solid #FFFFFF;
 }
