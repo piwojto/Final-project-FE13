@@ -4,9 +4,11 @@ body {
 .container {
     margin: 0 auto;
     width: 960px;
+    background-color: #4E4E4E;
 }
 nav {
     display: flex;
+    align-items: center;
     height: 50px;
     font-size: 18px;
     color: #FFFFFF;
@@ -16,12 +18,11 @@ nav h1{
     font-weight: bold;
 }
 .nav-links {
-  
+    justify-content: space-between;
 }
 .nav-links a {
     text-decoration: none;
     color: #FFFFFF;
-    margin-left: 40px;;
 }
 nav .container {
     display: flex;
@@ -59,6 +60,9 @@ nav .container {
 .land-page-btn {
     width: 164px;
     height: 41.39px;
+    background-color: transparent;
     font-size: 18px;
+    cursor: pointer;
     border: 3px solid #FFFFFF;
+    color: white;
 }
