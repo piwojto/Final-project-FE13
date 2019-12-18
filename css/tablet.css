@@ -1,37 +1,59 @@
+p {
+    text-align: unset;
+}
+
 .container {
     width: 720px;
 }
+
 .nav-links {
     display: flex;
     justify-content: space-between;
     width:30%;
 }
+
 .nav-links a {
     font-weight: normal;
 }
-.nav-links a:last-child {
-    cursor: not-allowed;
+
+.toggle-menu {
+    display: none;
 }
+
 .landing-page-text {
-    width: 75%;
+    width: 65%;
     height: 30%;
 }
+
+.about h1 {
+    text-align: left;
+}
+
 .about-employee {
     flex-direction: row;
 }
+
 .about-employee:nth-of-type(even) .about-employee-text {
     margin-right: 50px;
     margin-left: 0;
     text-align: right;
-  } 
+} 
+
 .about-employee-text {
     margin-left: 50px;
 }
+
 .about-employee:nth-of-type(even) {
     flex-direction: row-reverse;
 }
+
 .about1-employee-bcgd, .about2-employee-bcgd {
     margin-bottom: 0;
+}
+
+.offer h1 {
+    text-align: left;
+    font-size: 36px;
 }
 
 .offer-boxes {
@@ -41,6 +63,7 @@
     width: 500px;
     margin: 0 auto;
 }
+
 .box {
     position: relative;
     margin-right: 8%;
@@ -48,7 +71,28 @@
     width: 45%;
     height: 193.78px;
     background: #F1F1F1;
+    transition: transform .5s;
 }
+
+.box:hover {
+    transform: scale(1.05);
+}
+
 .box:nth-of-type(2n){
     margin-right: 0;
+}
+
+footer {
+    padding: 0;
+}
+
+footer .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-icons span {
+    padding: 0;
 }
